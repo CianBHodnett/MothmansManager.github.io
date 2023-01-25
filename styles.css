@@ -1,0 +1,18 @@
+:root{
+    --bgcolor:#EBC7E6;
+    --accentcolor: #A084DC;
+    --secaccentcolor:#645CBB;
+}
+
+@viewport {
+    width: device-width;
+}
+
+html{
+    scroll-behavior: smooth;
+    background-color: var(--bgcolor);
+}
+
+/* @font-face{
+
+} */
