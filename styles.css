@@ -10,9 +10,11 @@
 
 html{
     scroll-behavior: smooth;
-    background-color: var(--bgcolor);
 }
 
+body{
+    background-color: var(--bgcolor);
+}
 /* @font-face{
 
 } */
