@@ -16,8 +16,8 @@ body{
     background-color: var(--bgcolor);
 }
 
-header>h1{
-    font-size: 35px;
+h1{
+    font-size: 30px;
     color: var(--secaccentcolor);
     text-align: center;
 }
