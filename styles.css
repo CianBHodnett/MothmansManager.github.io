@@ -13,10 +13,11 @@ html{
 }
 
 body{
-    background-color: var(--bgcolor);
+    background-color: var(--secaccentcolor);
 }
 
-h1{
+header>h1{
+    font-size: 25px;
     text-align: center;
 }
 /* @font-face{
