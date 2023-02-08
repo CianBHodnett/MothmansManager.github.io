@@ -8,6 +8,11 @@
     width: device-width;
 }
 
+@font-face{
+    font-family: Kenney;
+    src: url(fonts/Kenney\ Mini.ttf);
+}
+
 html{
     scroll-behavior: smooth;
 }
@@ -20,6 +25,8 @@ h1{
     display: inline-block;
     font-size: 30px;
     color: var(--secaccentcolor);
+    margin: 0px;
+    padding: 0px;
 }
 
 @media screen and (min-width: 1100px){
@@ -27,21 +34,35 @@ h1{
         font-size: 40px;
         text-align: center;
     }
-    nav *{
-       margin-top: 100px; 
-       margin-bottom: auto;
+    nav >img{
+       margin-top: 190px; 
+       margin-bottom: 0px;
        margin-left: 40px ;
        margin-right: 40px; 
     }
 
-    nav >figure {
+    #homepage> nav >figure {
         display: inline-block;
         text-align: center;
     }
 
     figcaption > a {
+        text-align: center;
+        font-family: Kenney;
+        margin-left: 40px ;
+        margin-right: 40px;
         text-decoration: none;
         color: var(--secaccentcolor);
+    }
+
+    header>img{
+        border: 2px solid white;
+        border-radius: 12px;
+    }
+
+    h1{
+        height: 80px;
+        line-height: 80px;
     }
 }
 /* @font-face{
