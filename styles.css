@@ -19,31 +19,54 @@ html{
 }
 
 body{
-    cursor: url('/images/pointer1.png'), auto;
+    cursor: url('/images/pointer1.png'), auto; 
+    /* from https://megabyte-games.itch.io/mouse-cursor-pack?download 
+    free license*/
     background-color: var(--bgcolor);
 }
 
 body>a:hover{
     cursor: url('/images/click1.png'), auto;
+    /* from https://megabyte-games.itch.io/mouse-cursor-pack?download 
+    free license*/
 }
 
 header{
     position: relative;
-    height: auto;
-    padding: 1%;
+    padding: 20px;
+    width: 80%;
+    height: 150px;
+    
+
     border-radius: 25px;
     background: rgb(26,58,120);
-    background: linear-gradient(90deg, rgba(26,58,120,1) 0%, rgba(108,190,179,0) 25%);
+    background: linear-gradient(90deg, rgba(26, 57, 120, 0.788) 0%, rgba(108,190,179,0) 25%);
 
 }
+
 header >h1{
     font-family: kenney;
-    position: absolute;
     font-size: 30px;
     color: var(--text);
+
     padding: 0px;
-    top: 15%;
-    left: 6.4%;
+    margin: 0px;
+
+    position: relative;    
+    top: -120px;
+    left: 180px;
+}
+
+header>h1~h2{
+    font-family: kenney;
+    color: var(--text);
+    font-size: 20px;
+
+    margin: 0px;
+
+    position: relative;
+    left: 180px;
+    top: -145px;
 }
 
 
@@ -91,6 +114,47 @@ footer>p~p{
     right: .7%;
     bottom: 0;
 }
+
+#clipee{
+    position: absolute;
+    right: 0;
+    bottom: 40px;
+}
+
+#ClipeeTalk{
+    position: absolute;
+    font-family: kenney;
+    color: black;
+    text-align: center;
+
+    background-color: #e0debfd5;
+    border-radius: 15px;
+    height:auto;
+    width: 400px;
+    padding: .5%;
+    right: 200px;
+    bottom: 200px;
+}
+
+#ClipeeTalk > h1{
+    margin: 0px;
+}
+
+#ClipeeTalk:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 95%;
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+	border-top-color: #e0debfd5;
+	border-bottom: 0;
+	border-right: 0;
+	margin-left: -10px;
+	margin-bottom: -20px;
+}
+
 
 @media screen and (min-width: 1100px){
     #homepage > nav{ 
