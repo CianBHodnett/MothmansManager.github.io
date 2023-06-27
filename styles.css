@@ -23,6 +23,7 @@ body{
     /* from https://megabyte-games.itch.io/mouse-cursor-pack?download 
     free license*/
     background-color: var(--bgcolor);
+    font-family: kenney;
 }
 
 body>a:hover{
@@ -31,11 +32,14 @@ body>a:hover{
     free license*/
 }
 
+nav{
+    margin: 10%;
+}
 header{
     position: relative;
     padding: 20px;
     width: 80%;
-    height: 150px;
+    height: 300px;
     
 
     border-radius: 25px;
@@ -44,29 +48,33 @@ header{
 
 }
 
+header>img{
+    width: 300px;
+    height: 300px;
+}
+
 header >h1{
-    font-family: kenney;
-    font-size: 30px;
+    font-size: 60px;
     color: var(--text);
 
     padding: 0px;
     margin: 0px;
 
     position: relative;    
-    top: -120px;
-    left: 180px;
+    top: -60%;
+    left: 45%;
 }
 
 header>h1~h2{
     font-family: kenney;
     color: var(--text);
-    font-size: 20px;
+    font-size: 40px;
 
     margin: 0px;
 
-    position: relative;
-    left: 180px;
-    top: -145px;
+    position: relative;    
+    top: -60%;
+    left: 45%;
 }
 
 
@@ -90,7 +98,7 @@ figure {
 }
 footer {
     position: fixed;
-    height: 60px;
+    height: 150px;
     background-color: var(--accentcolor);
     bottom: 0px;
     left: 0px;
@@ -99,41 +107,64 @@ footer {
     box-shadow: 0px -3px white;
 }
 
-footer>p{
-    font-family: kenney;
-    margin-left: .7%;
-    padding: .2%;
-    width: 80px;
+footer>p, #clock{
     background-color:var(--secaccentcolor);
+    font-size: 50px;
     text-align: center;
+    margin-left: .7%;
+    padding: 1%;
+    width: 150px;
+
+
     box-shadow: 2px 2px black, -2px -2px white;
 }
 
-footer>p~p{
+footer>p{
+    position: absolute;
+    left: 10px;
+    bottom: 0px;
+    padding: 0px;
+}
+
+#clock{
+    position: absolute;
+    right: 10px;
+    bottom: 0px;
+    padding: 0px;
+}
+
+#container{
     position: absolute;
     right: .7%;
-    bottom: 0;
+    bottom: 3px;
 }
 
 #clipee{
     position: absolute;
     right: 0;
-    bottom: 40px;
+    bottom: 10%;
+
+}
+
+img{
+    width: 100%;
+    height: auto;
 }
 
 #ClipeeTalk{
+    font-size: 27px;
     position: absolute;
-    font-family: kenney;
     color: black;
     text-align: center;
 
-    background-color: #e0debfd5;
+    background-color: #e0debf;
     border-radius: 15px;
-    height:auto;
-    width: 400px;
+    width: 60%;
+    height:10%;
+
     padding: .5%;
-    right: 200px;
-    bottom: 200px;
+    right: 10%;
+    bottom: 21%;
 }
 
 #ClipeeTalk > h1{
@@ -155,50 +186,151 @@ footer>p~p{
 	margin-bottom: -20px;
 }
 
+#homepage > nav{ 
+    font-size: 40px;
+    text-align: center;
+}
+    
+figure>img{
+    height:300px;
+    width: 300px;
+}
 
-@media screen and (min-width: 1100px){
-    #homepage > nav{ 
-        font-size: 40px;
-        text-align: center;
+#homepage> nav >figure {
+    display: inline-block;
+    text-align: center;
+}
+
+figcaption > a {
+    text-align: center;
+    margin-left: 40px ;
+    margin-right: 40px;
+    text-decoration: none;
+    color: var(--text);
+}
+
+figure>img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+        
+        
+}
+header>img{
+    box-shadow: 3px 3px black, -3px -3px white;
+}
+
+h1{
+      height: 80px;
+    line-height: 80px;
+}
+
+
+@media screen and (min-width: 1000px){
+
+    header{
+        position: relative;
+        padding: 20px;
+        width: 80%;
+        height: 150px;
+        
+    
+        border-radius: 25px;
+        background: rgb(26,58,120);
+        background: linear-gradient(90deg, rgba(26, 57, 120, 0.788) 0%, rgba(108,190,179,0) 25%);
+    
     }
     
-    nav >img{
-       height:100%;
-    }
-
-    #homepage> nav >figure {
-        display: inline-block;
-        text-align: center;
-    }
-
-    figcaption > a {
-        text-align: center;
-        font-family: Kenney;
-        margin-left: 40px ;
-        margin-right: 40px;
-        text-decoration: none;
-        color: var(--text);
-    }
-
-    figure>img{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 100%;
-        
-        
-    }
     header>img{
-        width: 5%;
-        height: 5%;
-        box-shadow: 3px 3px black, -3px -3px white;
+        height: 150px;
+        width: 150px;
+    }
+    header >h1{
+        font-size: 30px;
+        color: var(--text);
+    
+        padding: 0px;
+        margin: 0px;
+    
+        position: relative;    
+        top: -120px;
+        left: 180px;
+    }
+    
+    header>h1~h2{
+        font-family: kenney;
+        color: var(--text);
+        font-size: 20px;
+    
+        margin: 0px;
+    
+        position: relative;
+        left: 180px;
+        top: -145px;
+    }
+    
+    footer {
+        position: fixed;
+        height: 60px;
+        background-color: var(--accentcolor);
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        margin-bottom: 0px;
+        box-shadow: 0px -3px white;
     }
 
-    h1{
-        height: 80px;
-        line-height: 80px;
+    footer>p, #clock{
+        background-color:var(--secaccentcolor);
+        font-size: 20px;
+        text-align: center;
+        margin-left: .7%;
+        padding: .7%;
+        width: 80px;
+    
+    
+        box-shadow: 2px 2px black, -2px -2px white;
     }
+
+    footer>p{
+        position: absolute;
+        left: 10px;
+        bottom: 0px;
+        padding: 0px;
+    }
+    
+    #clock{
+        position: absolute;
+        right: 10px;
+        bottom: 0px;
+        padding: 0px;
+    }
+
+    #clipee{
+        position: absolute;
+        right: 0;
+        bottom: 10%;
+    }
+
+    #ClipeeTalk{
+        font-size: 18px;
+        position: absolute;
+        color: black;
+        text-align: center;
+    
+        background-color: #e0debf;
+        border-radius: 15px;
+        width: 25%;
+        height:10%;
+    
+        padding: 1%;
+        right: 9%;
+        bottom: 15%;
+    }
+
+    nav{
+        margin: 0px;
+    }
+
 }
-/* @font-face{
-
-} */

@@ -8,13 +8,14 @@
         </title>
 
         <link rel="stylesheet" href="styles.css" />
+        <script type="text/javascript" src="clock.js"></script>
 
       </head>
 
-      <body id = "homepage">
+      <body id = "homepage" onload="startTime">
 
         <header>
-            <img src = "images/Cian.png" alt = "user icon" style="width:150px;height:150px;"/>
+            <img src = "images/Cian.png" alt = "user icon" />
             <h1>Cian Hodnett</h1>
             <h2>Computer Scientist/Programmer</h2>
         </header>
@@ -28,7 +29,7 @@
             </figure>
 
             <a href = "about.html"><figure>
-                <img    src = "images/folder.png" 
+                <img    src = "images/AboutME.png" 
                         alt = "folder icon"/>
                 <figcaption>About Me</a></figcaption>
             </figure> 
@@ -40,7 +41,7 @@
             </figure>
 
             <a href = "gallery.html"><figure>
-                <img    src = "images/folder.png" 
+                <img    src = "images/Gallery.png" 
                         alt = "folder icon"/>
                 <figcaption>Gallery</a></figcaption>
             </figure>
@@ -66,7 +67,9 @@
 
             <p>START</p>
 
-            <p>11:59</p>
+            <div id = 'container'>
+                <p id="clock">11.59 </p>    
+            </div>
 
         </footer>
 
