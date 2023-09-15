@@ -16,12 +16,13 @@
 
 html{
     scroll-behavior: smooth;
-}
-
-body{
     cursor: url('/images/pointer1.png'), auto; 
     /* from https://megabyte-games.itch.io/mouse-cursor-pack?download 
     free license*/
+}
+
+body{
+
     background-color: var(--bgcolor);
     font-family: kenney;
 }
@@ -34,7 +35,7 @@ body>a:hover{
 
 footer {
     position: fixed;
-    height: 60px;
+    height: 4vw;
     background-color: var(--accentcolor);
     bottom: 0px;
     left: 0px;
@@ -63,9 +64,10 @@ footer > p~p{
 #window{
     background-color: var(--accentcolor);
     position: relative;
-    left: 25%;    
-    top: 130px;
-    width: 50%;    
+    left: 10vw;
+    top: 5vw;
+    width: 75vw; 
+    height: 10vw;
 }
 header{
     background-color: #1129af;
@@ -79,11 +81,13 @@ header{
 
 
 h1{
+    font-size: 2vw;
     padding: 10px;
     margin: 0px;
 }
 
 h2{
+    font-size: 1.5vw;
     margin-top: 0px;
 }
 
@@ -92,10 +96,14 @@ main{
     box-shadow: 2px 2px black, -2px -2px white;
 }
 
+p, ul{
+    font-size: 2vw;
+}
+
 nav{    
     overflow: auto;
     text-align: justify;
-    font-size: large;
+    font-size: 4vw;
     padding: 5px;
 
 
@@ -115,5 +123,20 @@ h2 ~ p{
     padding-left: 10px;
     padding-right: 10px;
 
+
+}
+
+@media screen and (min-width: 1000px){
+
+    #window{
+        height: 15vw;
+    }
+    p, ul{
+        font-size: 1vw;
+    }
+
+    nav{
+        font-size: 1.5vw;
+    }
 
 }

@@ -1,0 +1,181 @@
+:root{
+    --bgcolor:#6cbeb3;
+    --accentcolor: #c7d2d3;
+    --secaccentcolor:#93969b;
+    --text: #e4e4e4;
+}
+
+@viewport {
+    width: device-width;
+}
+
+@font-face{
+    font-family: Kenney;
+    src: url(fonts/Kenney\ Mini.ttf);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    cursor: url('/images/pointer1.png'), auto; 
+    /* from https://megabyte-games.itch.io/mouse-cursor-pack?download 
+    free license*/
+    background-color: var(--bgcolor);
+    font-family: kenney;
+}
+
+body>a:hover{
+    cursor: url('/images/click1.png'), auto;
+    /* from https://megabyte-games.itch.io/mouse-cursor-pack?download 
+    free license*/
+}
+
+
+#window{
+    background-color: var(--accentcolor);
+    position: relative;
+    left: 10px;    
+    top: 10px;
+    width: 98%;    
+}
+header{
+    background-color: #1129af;
+    color: var(--text);
+
+    position: relative;
+    
+
+    box-shadow: 2px 2px black, -2px -2px white;
+}
+
+
+h1{
+    font-size: 80px;
+    padding: 5px;
+    padding-left: 20px;
+    margin: 0px;
+}
+
+h2{
+    margin-top: 0px;
+    padding-left: 10px;
+}
+
+
+main{
+    background: var(--accentcolor);
+    box-shadow: 2px 2px black, -2px -2px white;
+}
+
+nav{    
+    overflow: auto;
+    text-align: justify;
+    font-size: 60px;
+    padding: 10px;
+
+
+    box-shadow: 2px 2px black, -2px -2px white;
+}
+nav>a {
+    margin-right: 2%;
+    padding-left: 10px;
+}
+
+
+
+h2 ~ p{
+    padding: 10px;
+}
+
+#textfile{
+    color: black;
+    background-color: var(--text);
+    padding-left: 10px;
+    padding-right: 10px;
+
+
+}
+
+footer {
+    position: fixed;
+    height: 150px;
+    background-color: var(--accentcolor);
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+    box-shadow: 0px -3px white;
+}
+
+footer>p, #clock{
+    background-color:var(--secaccentcolor);
+    font-size: 50px;
+    text-align: center;
+    margin-left: .7%;
+    padding: 1%;
+    width: 150px;
+
+
+    box-shadow: 2px 2px black, -2px -2px white;
+}
+
+footer>p{
+    position: absolute;
+    left: 10px;
+    bottom: 0px;
+    padding: 0px;
+}
+
+#clock{
+    position: relative;
+    left: 16em;
+    bottom: 15px;
+    padding: 0px;
+}
+
+@media screen and (min-width: 1100px){
+
+    h1{
+        font-size: 2em;
+    }
+    #window{
+        background-color: var(--accentcolor);
+        position: relative;
+        left: 25%;    
+        top: 130px;
+        width: 50%;    
+}
+footer {
+    position: fixed;
+    height: 60px;
+    background-color: var(--accentcolor);
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+    box-shadow: 0px -3px white;
+}
+
+footer>p{
+    font-family: kenney;
+    margin-left: .7%;
+    margin-right: .7%;
+    padding: .2%;
+    width: 80px;
+    background-color:var(--secaccentcolor);
+    text-align: center;
+    box-shadow: 2px 2px black, -2px -2px white;
+}
+
+footer > p~p{
+    position: absolute;
+    right: 0px;
+    bottom: 1px;
+}
+
+nav{
+    font-size: 20px;
+}
+}
